@@ -41,3 +41,11 @@ support_assistant/
 ├── Dockerfile
 ├── .dockerignore
 └── README.md
+
+## Verification
+
+The default MOCK_LLM mode was tested successfully.
+
+The policy query "What is the delivery fee for orders below INR 149?" successfully retrieved `doc_01` along with the top related documents from ChromaDB.
+
+A general query was also tested and correctly routed to the direct-answer branch without retrieval.
