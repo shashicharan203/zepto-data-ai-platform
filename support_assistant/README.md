@@ -49,3 +49,11 @@ The default MOCK_LLM mode was tested successfully.
 The policy query "What is the delivery fee for orders below INR 149?" successfully retrieved `doc_01` along with the top related documents from ChromaDB.
 
 A general query was also tested and correctly routed to the direct-answer branch without retrieval.
+
+## RAG Verification
+
+ChromaDB was verified with 8 indexed documents: `doc_01` through `doc_08`.
+
+The retrieval pipeline was tested using a delivery-policy query and successfully returned `doc_01` as the top source.
+
+The LangGraph flow was also tested with a general question, confirming the `direct_answer` branch.
